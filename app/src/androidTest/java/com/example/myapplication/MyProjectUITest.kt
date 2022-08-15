@@ -20,7 +20,7 @@ import org.junit.Rule
 class MyProjectUITest : TestCase() {
     @Rule
 
-  //  val rule2 = ActivityTestRule(MainActivity::class.java, false, false)
+
     val rule= ActivityScenarioRule(MainActivity::class.java)
     val screen = MyProjectScreen()
 
@@ -34,7 +34,7 @@ class MyProjectUITest : TestCase() {
             }
 
             step("2") {
-                tvSurname.replaceText("Vertinsky")
+                tvSurname.replaceText("123")
             }
 
             step("3"){
